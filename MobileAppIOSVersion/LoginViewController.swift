@@ -33,4 +33,10 @@ class LoginViewController: UIViewController {
         guideLabel.font = UIFont(name: "GmarketSansTTFMedium", size: 20)
         signUpLabel.font = UIFont(name: "GmarketSansTTFMedium", size: 13)
     }
+    
+    // MARK: - Action
+    @IBAction func backBtnTapped(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
 }

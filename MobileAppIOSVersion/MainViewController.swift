@@ -23,7 +23,7 @@ class MainViewController: UIViewController {
     
     // MARK: - Function
     func setFont() {
-        whereLabel.font = UIFont(name: "GmarketSansTTFBold", size: 35)
+        whereLabel.font = UIFont(name: "GmarketSansTTFBold", size: 30)
         recentLabel.font = UIFont(name: "GmarketSansTTFMedium", size: 15)
     }
 }

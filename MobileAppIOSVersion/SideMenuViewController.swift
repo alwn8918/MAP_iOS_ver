@@ -37,6 +37,15 @@ class SideMenuViewController: UIViewController {
         myCommentLabel.font = UIFont(name: "GmarketSansTTFMedium", size: 17)
         settingLabel.font = UIFont(name: "GmarketSansTTFMedium", size: 17)
     }
+    
+    // MARK: - Action
+    @IBAction func loginBtnTapped(_ sender: Any) {
+        guard let loginVC = self.storyboard?.instantiateViewController(identifier: "LoginViewController") as? LoginViewController else { return }
+        loginVC.modalTransitionStyle = .coverVertical
+        loginVC.modalPresentationStyle = .fullScreen
+        self.present(loginVC, animated: true, completion: nil)
+    }
+    
 }
 
 
