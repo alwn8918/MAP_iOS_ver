@@ -18,6 +18,8 @@
 		23BB9F6E2C3D54440008DD70 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9F6D2C3D54440008DD70 /* MainViewController.swift */; };
 		23BB9F702C3D96B90008DD70 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9F6F2C3D96B90008DD70 /* SideMenuViewController.swift */; };
 		23BB9F742C3D9E350008DD70 /* CustomSideMenuNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9F732C3D9E350008DD70 /* CustomSideMenuNavigation.swift */; };
+		23BB9F762C3DAF630008DD70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9F752C3DAF630008DD70 /* LoginViewController.swift */; };
+		23BB9F782C3DAFB90008DD70 /* BagelFatOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23BB9F772C3DAFB90008DD70 /* BagelFatOne-Regular.ttf */; };
 		A586DFC2D16D7C72DFF01D8E /* Pods_MobileAppIOSVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67050FFAF7DD6B74C250ED7C /* Pods_MobileAppIOSVersion.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		23BB9F6D2C3D54440008DD70 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		23BB9F6F2C3D96B90008DD70 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		23BB9F732C3D9E350008DD70 /* CustomSideMenuNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSideMenuNavigation.swift; sourceTree = "<group>"; };
+		23BB9F752C3DAF630008DD70 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		23BB9F772C3DAFB90008DD70 /* BagelFatOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BagelFatOne-Regular.ttf"; sourceTree = "<group>"; };
 		67050FFAF7DD6B74C250ED7C /* Pods_MobileAppIOSVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileAppIOSVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		935A91014A238BE0B08287E2 /* Pods-MobileAppIOSVersion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppIOSVersion.debug.xcconfig"; path = "Target Support Files/Pods-MobileAppIOSVersion/Pods-MobileAppIOSVersion.debug.xcconfig"; sourceTree = "<group>"; };
 		E3AA2B42FE06452478D06711 /* Pods-MobileAppIOSVersion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppIOSVersion.release.xcconfig"; path = "Target Support Files/Pods-MobileAppIOSVersion/Pods-MobileAppIOSVersion.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 				23BB9F6D2C3D54440008DD70 /* MainViewController.swift */,
 				23BB9F6F2C3D96B90008DD70 /* SideMenuViewController.swift */,
 				23BB9F732C3D9E350008DD70 /* CustomSideMenuNavigation.swift */,
+				23BB9F752C3DAF630008DD70 /* LoginViewController.swift */,
 				238D59412C34ADE800E87DBF /* Assets.xcassets */,
 				238D59432C34ADE800E87DBF /* LaunchScreen.storyboard */,
 				238D59462C34ADE800E87DBF /* Info.plist */,
@@ -93,6 +98,7 @@
 				23BB9F692C3D53EC0008DD70 /* GmarketSansTTFBold.ttf */,
 				23BB9F672C3D53EC0008DD70 /* GmarketSansTTFLight.ttf */,
 				23BB9F682C3D53EC0008DD70 /* GmarketSansTTFMedium.ttf */,
+				23BB9F772C3DAFB90008DD70 /* BagelFatOne-Regular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -179,6 +185,7 @@
 				238D59452C34ADE800E87DBF /* Base in Resources */,
 				238D59402C34ADE700E87DBF /* Base in Resources */,
 				23BB9F6B2C3D53EC0008DD70 /* GmarketSansTTFMedium.ttf in Resources */,
+				23BB9F782C3DAFB90008DD70 /* BagelFatOne-Regular.ttf in Resources */,
 				23BB9F6C2C3D53EC0008DD70 /* GmarketSansTTFBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BB9F762C3DAF630008DD70 /* LoginViewController.swift in Sources */,
 				23BB9F702C3D96B90008DD70 /* SideMenuViewController.swift in Sources */,
 				23BB9F6E2C3D54440008DD70 /* MainViewController.swift in Sources */,
 				23BB9F742C3D9E350008DD70 /* CustomSideMenuNavigation.swift in Sources */,
