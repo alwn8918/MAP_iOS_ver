@@ -9,15 +9,34 @@ import UIKit
 import SideMenu
 
 class SideMenuViewController: UIViewController {
-
+    // MARK: - Properties
+    @IBOutlet weak var profileView: UIView!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var userEmailLabel: UILabel!
+    
+    @IBOutlet weak var loginLabel: UILabel!
+    @IBOutlet weak var myHeartLabel: UILabel!
+    @IBOutlet weak var myCommentLabel: UILabel!
+    @IBOutlet weak var settingLabel: UILabel!
+    
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setFont()
         
+        profileView.layer.cornerRadius = 50
         
     }
     
-
-
+    // MARK: - Function
+    func setFont() {
+        userNameLabel.font = UIFont(name: "GmarketSansTTFMedium", size: 20)
+        userEmailLabel.font = UIFont(name: "GmarketSansTTFMedium", size: 13)
+        loginLabel.font = UIFont(name: "GmarketSansTTFMedium", size: 17)
+        myHeartLabel.font = UIFont(name: "GmarketSansTTFMedium", size: 17)
+        myCommentLabel.font = UIFont(name: "GmarketSansTTFMedium", size: 17)
+        settingLabel.font = UIFont(name: "GmarketSansTTFMedium", size: 17)
+    }
 }
 
 
