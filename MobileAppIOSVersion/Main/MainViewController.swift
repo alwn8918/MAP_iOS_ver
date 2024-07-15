@@ -27,6 +27,7 @@ class MainViewController: UIViewController {
         listTableView.delegate = self
         listTableView.dataSource = self
         
+        listTableView.isHidden = true
         let listNib = UINib(nibName: "ListTableViewCell", bundle: nil)
         listTableView.register(listNib, forCellReuseIdentifier: "ListTableViewCell")
     }
@@ -42,7 +43,7 @@ class MainViewController: UIViewController {
 // MARK: - dataSource, delegate
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -50,5 +51,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }
