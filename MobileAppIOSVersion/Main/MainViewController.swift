@@ -12,6 +12,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var whereLabel: UILabel!
     @IBOutlet weak var recentLabel: UILabel!
+    @IBOutlet weak var searchBtn: UIButton!
     
     @IBOutlet weak var listTableView: UITableView!
     
@@ -36,6 +37,11 @@ class MainViewController: UIViewController {
     func setFont() {
         whereLabel.font = UIFont(name: "GmarketSansTTFBold", size: 30)
         recentLabel.font = UIFont(name: "GmarketSansTTFMedium", size: 15)
+    }
+    
+    // MARK: - Action
+    @IBAction func searchTapped(_ sender: Any) {
+        listTableView.isHidden = false
     }
     
 }

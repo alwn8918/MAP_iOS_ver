@@ -525,11 +525,24 @@
                                             <segue destination="gZi-qY-JNf" kind="show" id="Oac-17-dFq"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGa-Vs-3Gj">
+                                        <rect key="frame" x="328" y="195" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="8Jt-Gk-4Ze"/>
+                                            <constraint firstAttribute="width" constant="30" id="Q2c-y2-4zK"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="ic_search"/>
+                                        <connections>
+                                            <action selector="searchTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lno-hf-GOA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.4549019608" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="290" id="2cP-0k-sh9"/>
                                     <constraint firstItem="1KN-4H-1vs" firstAttribute="leading" secondItem="jpn-Vs-otn" secondAttribute="leading" constant="30" id="399-n1-te8"/>
+                                    <constraint firstItem="P6A-TY-WYh" firstAttribute="trailing" secondItem="IGa-Vs-3Gj" secondAttribute="trailing" constant="5" id="75B-xa-7zK"/>
                                     <constraint firstItem="IOi-5w-VKO" firstAttribute="leading" secondItem="P6A-TY-WYh" secondAttribute="leading" id="OFn-cF-Yai"/>
                                     <constraint firstItem="P6A-TY-WYh" firstAttribute="top" secondItem="IOi-5w-VKO" secondAttribute="bottom" constant="5" id="OV9-fk-Tjm"/>
                                     <constraint firstAttribute="bottom" secondItem="P6A-TY-WYh" secondAttribute="bottom" constant="60" id="OgL-IL-0dE"/>
@@ -537,6 +550,7 @@
                                     <constraint firstItem="P6A-TY-WYh" firstAttribute="top" secondItem="qcJ-eb-TTa" secondAttribute="bottom" constant="30" id="dnC-3V-SBn"/>
                                     <constraint firstAttribute="trailing" secondItem="P6A-TY-WYh" secondAttribute="trailing" constant="30" id="upc-HB-6Zz"/>
                                     <constraint firstItem="qcJ-eb-TTa" firstAttribute="trailing" secondItem="P6A-TY-WYh" secondAttribute="trailing" id="wFJ-OL-ud1"/>
+                                    <constraint firstItem="IGa-Vs-3Gj" firstAttribute="centerY" secondItem="P6A-TY-WYh" secondAttribute="centerY" id="wJe-A0-yAI"/>
                                     <constraint firstItem="P6A-TY-WYh" firstAttribute="leading" secondItem="jpn-Vs-otn" secondAttribute="leading" constant="30" id="wPS-bX-mYi"/>
                                 </constraints>
                             </view>
@@ -574,6 +588,7 @@
                         <outlet property="listTableView" destination="FFr-Jd-aKa" id="j9A-cA-2it"/>
                         <outlet property="mainView" destination="Ozk-zK-5hh" id="niL-XS-sQ3"/>
                         <outlet property="recentLabel" destination="IOi-5w-VKO" id="83D-PP-Eac"/>
+                        <outlet property="searchBtn" destination="IGa-Vs-3Gj" id="Fu2-O4-pwb"/>
                         <outlet property="whereLabel" destination="qcJ-eb-TTa" id="9sJ-jL-aMG"/>
                     </connections>
                 </viewController>
@@ -627,6 +642,7 @@
         <image name="ic_heart" width="64" height="64"/>
         <image name="ic_login" width="64" height="64"/>
         <image name="ic_menu" width="256" height="256"/>
+        <image name="ic_search" width="64" height="64"/>
         <image name="ic_setting" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
