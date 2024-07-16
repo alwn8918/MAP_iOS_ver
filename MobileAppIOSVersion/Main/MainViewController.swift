@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class MainViewController: UIViewController {
     // MARK: - Properties
@@ -15,6 +16,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var searchBtn: UIButton!
     
     @IBOutlet weak var listTableView: UITableView!
+    
+    var items: [Item] = []
     
     
     // MARK: - LifeCycle
@@ -39,9 +42,15 @@ class MainViewController: UIViewController {
         recentLabel.font = UIFont(name: "GmarketSansTTFMedium", size: 15)
     }
     
+    func updateItems(_ items: [Item]) {
+        self.items = items
+        listTableView.reloadData()
+    }
+    
     // MARK: - Action
     @IBAction func searchTapped(_ sender: Any) {
         listTableView.isHidden = false
+        ListDataRequest().getRequestData(self)
     }
     
 }
@@ -49,17 +58,28 @@ class MainViewController: UIViewController {
 // MARK: - dataSource, delegate
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = listTableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath) as? ListTableViewCell else {
             return UITableViewCell()
         }
+        
+        let item = items[indexPath.row]
+        cell.configure(with: item)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+}
+
+// MARK: - didSuccess
+extension MainViewController {
+    func didSuccess(_ response: ListData) {
+        let items = response.response.body.items.item
+        updateItems(items)
     }
 }

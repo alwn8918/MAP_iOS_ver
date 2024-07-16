@@ -23,6 +23,8 @@
 		23BB9F7A2C3E7EDA0008DD70 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9F792C3E7EDA0008DD70 /* SignUpViewController.swift */; };
 		23FE16782C45541600A08A7B /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23FE16772C45541600A08A7B /* ListTableViewCell.xib */; };
 		23FE16792C45541600A08A7B /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE16762C45541600A08A7B /* ListTableViewCell.swift */; };
+		23FE167F2C456E5E00A08A7B /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE167E2C456E5E00A08A7B /* ListData.swift */; };
+		23FE16812C46093200A08A7B /* ListDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE16802C46093200A08A7B /* ListDataRequest.swift */; };
 		A586DFC2D16D7C72DFF01D8E /* Pods_MobileAppIOSVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67050FFAF7DD6B74C250ED7C /* Pods_MobileAppIOSVersion.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		23BB9F792C3E7EDA0008DD70 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		23FE16762C45541600A08A7B /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		23FE16772C45541600A08A7B /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		23FE167E2C456E5E00A08A7B /* ListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListData.swift; sourceTree = "<group>"; };
+		23FE16802C46093200A08A7B /* ListDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataRequest.swift; sourceTree = "<group>"; };
 		67050FFAF7DD6B74C250ED7C /* Pods_MobileAppIOSVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileAppIOSVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		935A91014A238BE0B08287E2 /* Pods-MobileAppIOSVersion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppIOSVersion.debug.xcconfig"; path = "Target Support Files/Pods-MobileAppIOSVersion/Pods-MobileAppIOSVersion.debug.xcconfig"; sourceTree = "<group>"; };
 		E3AA2B42FE06452478D06711 /* Pods-MobileAppIOSVersion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppIOSVersion.release.xcconfig"; path = "Target Support Files/Pods-MobileAppIOSVersion/Pods-MobileAppIOSVersion.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,8 +94,9 @@
 				23FE167A2C45543A00A08A7B /* TableView */,
 				23FE167C2C45545E00A08A7B /* Main */,
 				23FE167B2C45545500A08A7B /* Login */,
-				238D59412C34ADE800E87DBF /* Assets.xcassets */,
+				23FE167D2C456E3200A08A7B /* Data */,
 				238D59432C34ADE800E87DBF /* LaunchScreen.storyboard */,
+				238D59412C34ADE800E87DBF /* Assets.xcassets */,
 				238D59462C34ADE800E87DBF /* Info.plist */,
 			);
 			path = MobileAppIOSVersion;
@@ -134,6 +139,15 @@
 				23BB9F732C3D9E350008DD70 /* CustomSideMenuNavigation.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		23FE167D2C456E3200A08A7B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				23FE167E2C456E5E00A08A7B /* ListData.swift */,
+				23FE16802C46093200A08A7B /* ListDataRequest.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		2A2D4CFE1C0FB0206D233DBF /* Pods */ = {
@@ -275,6 +289,8 @@
 			files = (
 				23BB9F762C3DAF630008DD70 /* LoginViewController.swift in Sources */,
 				23FE16792C45541600A08A7B /* ListTableViewCell.swift in Sources */,
+				23FE167F2C456E5E00A08A7B /* ListData.swift in Sources */,
+				23FE16812C46093200A08A7B /* ListDataRequest.swift in Sources */,
 				23BB9F7A2C3E7EDA0008DD70 /* SignUpViewController.swift in Sources */,
 				23BB9F702C3D96B90008DD70 /* SideMenuViewController.swift in Sources */,
 				23BB9F6E2C3D54440008DD70 /* MainViewController.swift in Sources */,

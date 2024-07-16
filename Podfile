@@ -7,5 +7,6 @@ target 'MobileAppIOSVersion' do
 
   # Pods for MobileAppIOSVersion
   pod 'SideMenu'
+  pod 'Alamofire'
 
 end
